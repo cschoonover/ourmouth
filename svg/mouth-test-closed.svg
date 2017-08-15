@@ -1,0 +1,32 @@
+<svg id="closed_mouth" data-name="closed mouth" xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920">
+<defs>
+    <style>
+      .cls-1 {
+        fill: #540f2e;
+        stroke: #000;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        fill: #fdfddd;
+      }
+
+      .cls-3 {
+        fill: #ed1c24;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <g id = "mouth">
+  <!--<rect class="cls-1" x="-2" y="855" width="1082" height="147"/>-->
+  <g id="upper_teeth" data-name="upper teeth">
+    <rect id="Rounded_Rectangle_1_copy_6" data-name="Rounded Rectangle 1 copy 6" class="cls-2" x="17" y="753" width="171" height="197" rx="30" ry="30"/>
+    <rect id="Rounded_Rectangle_1_copy_6-2" data-name="Rounded Rectangle 1 copy 6" class="cls-2" x="200" y="753" width="171" height="197" rx="30" ry="30"/>
+    <rect id="Rounded_Rectangle_1_copy_6-3" data-name="Rounded Rectangle 1 copy 6" class="cls-2" x="375" y="753" width="171" height="197" rx="30" ry="30"/>
+    <rect id="Rounded_Rectangle_1_copy_6-4" data-name="Rounded Rectangle 1 copy 6" class="cls-2" x="554" y="753" width="171" height="197" rx="30" ry="30"/>
+    <rect id="Rounded_Rectangle_1_copy_6-5" data-name="Rounded Rectangle 1 copy 6" class="cls-2" x="729" y="753" width="171" height="197" rx="30" ry="30"/>
+    <rect id="Rounded_Rectangle_1_copy_6-6" data-name="Rounded Rectangle 1 copy 6" class="cls-2" x="905" y="753" width="171" height="197" rx="30" ry="30"/>
+  </g>
+  <path class="cls-3" d="M0,962H1080v242s-254.232,104-516,104C286.242,1308,0,1204,0,1204V962ZM0,664s165.375-85.75,366.7-123.03C422.617,530.615,481.308,588,540,588c65.784,0,131.567-55.689,193.446-43.118C925.54,583.909,1080,664,1080,664V906H0V664Z"/>
+  </g>
+</svg>

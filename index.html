@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Our Mouth</title>
+  <script src="snap.svg.js"></script>
+</head>
+
+<body>
+  <script type="text/javascript">
+  window.onload = function (){
+    /*global Snap*/
+    var s = Snap("#svgout");
+    
+    s.attr({ viewBox: "0 0 3413 1920" });
+    var g = s.group();
+
+    var open = Snap.load("svg/mouth-test-open.svg", function ( loadedFragment ) {
+                                                g.append( loadedFragment );
+                                                g.hover( hoverover, hoverout );
+                                                
+                                        } );
+                                        
+   var closed = Snap.load("svg/mouth-test-closed.svg", function ( loadedFragment ) {
+                                                g.append( loadedFragment );
+                                                
+                                        } );
+                                        
+  
+                                        
+    var hoverover = function() { g.attr({'opacity': 0.02 });};
+    var hoverout = function() { g.attr({'opacity': 0.98 });};
+
+  };
+  </script>
+  
+<div class="output">
+        <svg id="svgout"></svg>
+</div>
+    
+</body>
+</html>

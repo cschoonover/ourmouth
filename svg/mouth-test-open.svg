@@ -1,0 +1,66 @@
+<svg id="open_mouth" data-name="open mouth" xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920">
+<defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-1, .cls-8 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #f49ac1;
+      }
+
+      .cls-3 {
+        fill: #f468a6;
+      }
+
+      .cls-4 {
+        fill: #c83b79;
+      }
+
+      .cls-5 {
+        fill: #85204c;
+      }
+
+      .cls-6 {
+        fill: #540f2e;
+      }
+
+      .cls-7 {
+        fill: #fdfddd;
+      }
+
+      .cls-8 {
+        fill: #ed1c24;
+      }
+    </style>
+  </defs>
+  <!--<path class="cls-1" d="M0,1656H1080v264H0V1656ZM0-1H1080V263H0V-1Z"/>-->
+  <g id="throat">
+    <circle id="Ellipse_1_copy_4" data-name="Ellipse 1 copy 4" class="cls-2" cx="540" cy="960" r="817"/>
+    <circle id="Ellipse_1_copy_3" data-name="Ellipse 1 copy 3" class="cls-3" cx="540.5" cy="960.5" r="514.5"/>
+    <circle id="Ellipse_1_copy_2" data-name="Ellipse 1 copy 2" class="cls-4" cx="540.5" cy="960.5" r="383.5"/>
+    <circle id="Ellipse_1_copy" data-name="Ellipse 1 copy" class="cls-5" cx="540.5" cy="960.5" r="245.5"/>
+    <circle class="cls-6" cx="540" cy="960" r="158"/>
+  </g>
+  <g id="lower_teeth" data-name="lower teeth">
+    <rect id="Rounded_Rectangle_1" data-name="Rounded Rectangle 1" class="cls-7" x="9" y="1459" width="171" height="197" rx="30" ry="30"/>
+    <rect id="Rounded_Rectangle_1_copy" data-name="Rounded Rectangle 1 copy" class="cls-7" x="192" y="1459" width="171" height="197" rx="30" ry="30"/>
+    <rect id="Rounded_Rectangle_1_copy_2" data-name="Rounded Rectangle 1 copy 2" class="cls-7" x="371" y="1459" width="171" height="197" rx="30" ry="30"/>
+    <rect id="Rounded_Rectangle_1_copy_3" data-name="Rounded Rectangle 1 copy 3" class="cls-7" x="546" y="1459" width="171" height="197" rx="30" ry="30"/>
+    <rect id="Rounded_Rectangle_1_copy_4" data-name="Rounded Rectangle 1 copy 4" class="cls-7" x="721" y="1459" width="171" height="197" rx="30" ry="30"/>
+    <rect id="Rounded_Rectangle_1_copy_5" data-name="Rounded Rectangle 1 copy 5" class="cls-7" x="897" y="1459" width="171" height="197" rx="30" ry="30"/>
+  </g>
+  <g id="upper_teeth" data-name="upper teeth">
+    <rect id="Rounded_Rectangle_1_copy_6" data-name="Rounded Rectangle 1 copy 6" class="cls-7" x="9" y="307" width="171" height="197" rx="30" ry="30"/>
+    <rect id="Rounded_Rectangle_1_copy_6-2" data-name="Rounded Rectangle 1 copy 6" class="cls-7" x="192" y="307" width="171" height="197" rx="30" ry="30"/>
+    <rect id="Rounded_Rectangle_1_copy_6-3" data-name="Rounded Rectangle 1 copy 6" class="cls-7" x="367" y="307" width="171" height="197" rx="30" ry="30"/>
+    <rect id="Rounded_Rectangle_1_copy_6-4" data-name="Rounded Rectangle 1 copy 6" class="cls-7" x="546" y="307" width="171" height="197" rx="30" ry="30"/>
+    <rect id="Rounded_Rectangle_1_copy_6-5" data-name="Rounded Rectangle 1 copy 6" class="cls-7" x="721" y="307" width="171" height="197" rx="30" ry="30"/>
+    <rect id="Rounded_Rectangle_1_copy_6-6" data-name="Rounded Rectangle 1 copy 6" class="cls-7" x="897" y="307" width="171" height="197" rx="30" ry="30"/>
+  </g>
+  <path id="Rectangle_1_copy" data-name="Rectangle 1 copy" class="cls-8" d="M0,1574H1080v242s-254.232,104-516,104C286.242,1920,0,1816,0,1816V1574ZM0,123S165.375,37.25,366.7-.03C422.617-10.385,481.308,47,540,47,605.784,47,671.567-8.689,733.446,3.882,925.54,42.909,1080,123,1080,123V365H0V123Z"/>
+</svg>
