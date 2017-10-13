@@ -53,11 +53,12 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
 <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
 <script src="our_hole_1_FINAL_V1.js"></script>
 <script>
-var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
+var canvas, stage, exportRoot, anim_container, loadProgress, dom_overlay_container, fnStartAnimation;
 function init() {
 	canvas = document.getElementById("canvas");
 	anim_container = document.getElementById("animation_container");
 	dom_overlay_container = document.getElementById("dom_overlay_container");
+	loadProgress = document.getElementById("progress");
 	
 	var queue = new createjs.LoadQueue();
 	createjs.Sound.alternateExtensions = ["mp3"];
@@ -75,10 +76,13 @@ function loadHandler( event){
 	var comp=AdobeAn.getComposition("BC999E11B9BB4B0C9A54F2FD0FEB8F96");
 	var lib=comp.getLibrary();
 	handleComplete({},comp);
+	anim_container.removeChild(loadProgress);
 }
 
 function loadProgressHandler( event){
 	console.log(event);
+	var progressPercent = Math.round(event.loaded * 100);
+	loadProgress.innerHTML = progressPercent;
 }
 
 function handleComplete(evt,comp) {
@@ -135,10 +139,21 @@ function handleComplete(evt,comp) {
 div {
    cursor: url('pointer-finger.png'), pointer;            
 }
+#progress {
+  font-size: 50px;
+  left: 50%;
+  letter-spacing: 0.1em;
+  margin: -25px 0 0 -100px;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  width: 200px;
+}
 </style>
 </head>
 <body onload="init();" style="margin:0px;">
 	<div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00); width:1536px; height:2048px">
+		<div id ="progress">...</div>
 		<canvas id="canvas" width="1536" height="2048" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
 		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:1536px; height:2048px; position: absolute; left: 0px; top: 0px; display: block;">
 		</div>
