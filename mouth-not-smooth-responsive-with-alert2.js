@@ -235,10 +235,9 @@ p.nominalBounds = new cjs.Rectangle(209,730.1,1123,573);
 	var shush = function(event) { 
 		createjs.Sound.stop(); 
 		createjs.Sound.play("shush");
-		this.gotoAndStop(0);
 	};
 	
-	document.getElementsByTagName("body")[0].addEventListener("click", shush.bind(this) );
+	document.getElementsByTagName("body")[0].addEventListener("click", shush );
 	//document.getElementsByTagName("body")[0].addEventListener("touchstart", shush );
 
 	// timeline functions:
@@ -287,7 +286,7 @@ p.nominalBounds = new cjs.Rectangle(209,730.1,1123,573);
 		
 		onResize();
 		var props = new createjs.PlayPropsConfig().set({interrupt: createjs.Sound.INTERRUPT_ANY})
-		//var instance = createjs.Sound.play("rainbow");
+		var instance = createjs.Sound.play("rainbow");
 	}
 	this.frame_34 = function() {
 		//alert("Mouth open/closed/shushed");
