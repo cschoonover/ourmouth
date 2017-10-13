@@ -281,7 +281,16 @@ p.nominalBounds = new cjs.Rectangle(209,730.1,1123,573);
 // stage content:
 (lib.mouthnotsmoothresponsivewithalert3 = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{});
-
+	var shush = function(event) { 
+			createjs.Sound.stop(); 
+			var shushInstance = createjs.Sound.play("shush");
+			this.gotoAndStop(73);
+			this.shushComplete = function(){
+				this.gotoAndPlay(0);
+			};
+			shushInstance.on("complete",this.shushComplete, this);			
+		};
+	document.getElementsByTagName("body")[0].addEventListener("click", shush.bind(this) );
 	// timeline functions:
 	this.frame_0 = function() {
 		/* 
@@ -327,6 +336,7 @@ p.nominalBounds = new cjs.Rectangle(209,730.1,1123,573);
 		}
 		
 		onResize();
+		var instance = createjs.Sound.play("rainbow");
 	}
 
 	// actions tween:
