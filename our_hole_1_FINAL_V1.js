@@ -269,7 +269,7 @@ p.nominalBounds = new cjs.Rectangle(209,730.1,1123,573);
 		stageHeight = page_canvas.height;
 		
 		var viewport = document.querySelector('meta[name=viewport]');
-		var viewportContent = 'width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0';
+		var viewportContent = 'width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no';
 		
 		if (viewport === null) {
 			var head = document.getElementsByTagName('head')[0];
@@ -290,7 +290,7 @@ p.nominalBounds = new cjs.Rectangle(209,730.1,1123,573);
 		}
 		
 		window.onresize = function () {
-			onResize();
+			onResize();			
 		}
 		
 		var instance = createjs.Sound.play("ourhole");
