@@ -293,8 +293,8 @@ p.nominalBounds = new cjs.Rectangle(209,730.1,1123,573);
 			onResize();
 		}
 		
-		onResize();
 		var instance = createjs.Sound.play("ourhole");
+		onResize();
 	}
 
 	// actions tween:
