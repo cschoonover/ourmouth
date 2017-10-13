@@ -58,20 +58,27 @@ function init() {
 	canvas = document.getElementById("canvas");
 	anim_container = document.getElementById("animation_container");
 	dom_overlay_container = document.getElementById("dom_overlay_container");
+	
+	var queue = new createjs.LoadQueue();
 	createjs.Sound.alternateExtensions = ["mp3"];
-	createjs.Sound.on("fileload", this.loadHandler, this);
-	sound = createjs.Sound.registerSound("OurHole_Final.mp3","ourhole");
-	sound = createjs.Sound.registerSound("shush-FINAL.mp3","shush");
+	queue.installPlugin(createjs.Sound);
+	queue.on("complete", this.loadHandler);
+	queue.on("fileprogress", this.loadProgressHandler);
+	queue.loadFile({id:"ourhole", src:"OurHole_Final.mp3"});
+	queue.loadFile({id:"shush", src:"shush-FINAL.mp3"});
+	//createjs.Sound.on("fileload", this.loadHandler, this);
+	<!-- sound = createjs.Sound.registerSound("OurHole_Final.mp3","ourhole"); -->
+	<!-- sound = createjs.Sound.registerSound("shush-FINAL.mp3","shush"); -->
 }
 
 function loadHandler( event){
+	var comp=AdobeAn.getComposition("BC999E11B9BB4B0C9A54F2FD0FEB8F96");
+	var lib=comp.getLibrary();
+	handleComplete({},comp);
+}
+
+function loadProgressHandler( event){
 	console.log(event);
-	if(event.src == "OurHole_Final.mp3")
-	{
-		var comp=AdobeAn.getComposition("BC999E11B9BB4B0C9A54F2FD0FEB8F96");
-		var lib=comp.getLibrary();
-		handleComplete({},comp);
-	}
 }
 
 function handleComplete(evt,comp) {
