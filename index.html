@@ -51,32 +51,34 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
 <title>OURHOLE.COM</title>
 <!-- write your code here -->
 <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
-<script src="mouth-not-smooth-responsive-with-alert3.js"></script>
+<script src="our_hole_1_FINAL_V1.js"></script>
 <script>
 var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
 function init() {
 	canvas = document.getElementById("canvas");
 	anim_container = document.getElementById("animation_container");
 	dom_overlay_container = document.getElementById("dom_overlay_container");
-	var comp=AdobeAn.getComposition("BC999E11B9BB4B0C9A54F2FD0FEB8F96");
-	var lib=comp.getLibrary();
 	createjs.Sound.alternateExtensions = ["mp3"];
 	createjs.Sound.on("fileload", this.loadHandler, this);
-	sound = createjs.Sound.registerSound("double-rainbow-test.mp3","rainbow");
-	sound = createjs.Sound.registerSound("shush.mp3","shush");
-	handleComplete({},comp);
+	sound = createjs.Sound.registerSound("OurHole_Final.mp3","ourhole");
+	sound = createjs.Sound.registerSound("shush-FINAL.mp3","shush");
 }
 
 function loadHandler( event){
-	//var props = new createjs.PlayPropsConfig().set({interrupt: createjs.Sound.INTERRUPT_ANY, loop: -1})
-	//var instance = createjs.Sound.play("rainbow", props);
+	console.log(event);
+	if(event.src == "OurHole_Final.mp3")
+	{
+		var comp=AdobeAn.getComposition("BC999E11B9BB4B0C9A54F2FD0FEB8F96");
+		var lib=comp.getLibrary();
+		handleComplete({},comp);
+	}
 }
 
 function handleComplete(evt,comp) {
 	//This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
 	var lib=comp.getLibrary();
 	var ss=comp.getSpriteSheet();
-	exportRoot = new lib.mouthnotsmoothresponsivewithalert3();
+	exportRoot = new lib.our_hole_1_FINAL_V1();
 	stage = new lib.Stage(canvas);
 	stage.addChild(exportRoot);	
 	//Registers the "tick" event listener.
