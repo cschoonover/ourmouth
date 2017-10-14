@@ -91,6 +91,8 @@ function handleComplete(evt,comp) {
 	exportRoot = new lib.our_hole_1_FINAL_V1();
 	stage = new lib.Stage(canvas);
 	stage.addChild(exportRoot);	
+	
+	exportRoot.framerate = lib.properties.fps; //drop frames rather than try to catch up
 	//Registers the "tick" event listener.
 	fnStartAnimation = function() {
 		createjs.Ticker.setFPS(lib.properties.fps);
